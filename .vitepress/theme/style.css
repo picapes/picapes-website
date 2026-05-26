@@ -153,13 +153,14 @@
 
 .VPNavBar {
   background: var(--vp-c-bg) !important;
-  box-shadow: 0 8px 24px rgba(38, 24, 23, 0.08);
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .dark .VPNavBar {
   background: var(--vp-c-bg) !important;
-  border-bottom-color: rgba(233, 68, 54, 0.18);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .VPNavBar.home.top,
@@ -231,60 +232,41 @@
   line-height: 1;
 }
 
-.SiteFooter {
-  position: relative;
-  z-index: calc(var(--vp-z-index-sidebar) + 1);
-  flex-shrink: 0;
-  margin-top: auto;
-  padding: 30px 24px 26px;
-  width: 100%;
-  background: var(--vp-c-bg-soft);
-  border-top: 1px solid var(--vp-c-gutter);
-  color: var(--vp-c-text-2);
-  text-align: center;
-}
-
-.SiteFooterLinks {
+.VPHome {
+  padding-top: var(--vp-nav-height);
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 10px 22px;
-  margin: 0 auto;
-  padding-bottom: 0;
-  max-width: 690px;
+  flex-direction: column;
+  min-height: calc(100vh - var(--vp-nav-height));
 }
 
-.SiteFooterLink {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--vp-c-text-1);
-  font-size: 14px;
-  font-weight: 650;
-  line-height: 1.4;
-  transition: color 0.2s ease;
+.VPFooter {
+  border-top: none !important;
+  box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.12) !important;
+  background-color: var(--vp-c-bg-soft) !important;
+  padding: 32px 24px !important;
 }
 
-.SiteFooterLink:hover {
+.VPHome .VPFooter {
+  margin-top: auto;
+}
+
+.VPFooter .message a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.VPFooter .message a:hover {
   color: var(--primary-red);
 }
 
-.SiteFooterLink i {
-  color: currentColor;
-  font-size: 14px;
-  line-height: 1;
+.VPFooter .message i {
+  margin-right: 4px;
 }
 
-.SiteFooterCopyright {
-  margin: 14px 0 0;
-  color: var(--vp-c-text-3);
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-.VPHome {
-  padding-top: var(--vp-nav-height);
+/* Hide footer on pages with sidebar */
+.has-sidebar .VPFooter {
+  display: none !important;
 }
 
 .VPHomeHero {
@@ -331,16 +313,6 @@
 }
 
 @media (max-width: 767px) {
-  .VPNavBarTitle .title {
-    max-width: calc(100vw - 108px);
-    overflow: hidden;
-  }
-
-  .VPNavBarTitle .title span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   .VPHomeHero .image {
     margin: 20px auto 0;
   }
@@ -362,15 +334,4 @@
   .VPHomeHero .image-src {
     max-height: 260px;
   }
-
-  .SiteFooter {
-    padding: 24px 20px 22px;
-  }
-
-  .SiteFooterLinks {
-    gap: 10px 16px;
-    max-width: 420px;
-  }
 }
-
-
