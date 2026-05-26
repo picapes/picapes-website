@@ -40,10 +40,9 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Information',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Getting Started', link: '/getting-started' }
         ]
       }
     ],
