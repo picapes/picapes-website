@@ -145,109 +145,24 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
-.VPNav {
-  position: fixed !important;
-  background: var(--vp-c-bg);
-  pointer-events: auto;
-}
-
-.VPNavBar {
-  background: var(--vp-c-bg) !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-.dark .VPNavBar {
-  background: var(--vp-c-bg) !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-.VPNavBar.home.top,
-.VPNavBar:not(.home),
-.VPNavBar:not(.has-sidebar):not(.home.top) {
-  background-color: var(--vp-c-bg) !important;
-}
-
-.dark .VPNavBar.home.top,
-.dark .VPNavBar:not(.home),
-.dark .VPNavBar:not(.has-sidebar):not(.home.top) {
-  background-color: var(--vp-c-bg) !important;
-}
-
-.VPNavBar .divider-line {
-  background-color: transparent !important;
-}
-
-.VPNavScreen {
-  z-index: calc(var(--vp-z-index-nav) + 1);
-  background-color: var(--vp-c-bg) !important;
-  pointer-events: auto;
-}
-
-.VPNavBar > .wrapper > .container > .title {
-  height: var(--vp-nav-height);
-}
-
-.VPNavBarTitle .title {
-  gap: 10px;
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--primary-red);
-}
-
-.VPNavBarTitle {
-  max-width: calc(100vw - 92px);
-}
-
-.VPNavBarTitle .logo {
-  margin-right: 0;
-  object-fit: contain;
-}
-
-.VPNavBarMenuLink {
-  font-weight: 650;
-}
-
-.VPNavBarMenuLink.active,
-.VPNavBarMenuLink:hover {
-  color: var(--primary-red);
-}
-
-.VPNavBarSocialLinks .VPSocialLink:hover {
-  color: var(--primary-red);
-}
-
+/* Extra CSS */
 .VPFeature .icon .fa-solid {
   color: var(--primary-red);
 }
 
+/* distance between text and icon */
 .VPHomeHero .actions .VPButton {
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
-.VPHomeHero .actions .VPButton .hero-action-icon {
-  line-height: 1;
-}
-
-.VPHome {
-  padding-top: var(--vp-nav-height);
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - var(--vp-nav-height));
-}
-
+/* Footer Modified */
 .VPFooter {
   border-top: none !important;
   box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.12) !important;
   background-color: var(--vp-c-bg-soft) !important;
   padding: 32px 24px !important;
-}
-
-.VPHome .VPFooter {
-  margin-top: auto;
 }
 
 .VPFooter .message a {
@@ -260,78 +175,7 @@
   color: var(--primary-red);
 }
 
-.VPFooter .message i {
-  margin-right: 4px;
-}
-
-/* Hide footer on pages with sidebar */
-.has-sidebar .VPFooter {
-  display: none !important;
-}
-
-.VPHomeHero {
-  margin-top: 0;
-  padding-top: 64px;
-  padding-bottom: 80px;
-}
-
-.VPHomeHero .container {
-  align-items: center;
-  gap: 48px;
-}
-
-.VPHomeHero .main {
-  width: min(100%, 620px);
-}
-
-.VPHomeHero .name {
-  max-width: 620px;
-}
-
-.VPHomeHero .tagline {
-  color: var(--vp-c-text-2);
-}
-
-.VPHomeHero .image {
-  margin: 0;
-}
-
-.VPHomeHero .image-container {
-  transform: none;
-}
-
-.VPHomeHero .image-bg {
-  width: 360px;
-  height: 360px;
-  opacity: 0.85;
-}
-
-.VPHomeHero .image-src {
-  max-width: 300px;
-  max-height: 380px;
-  object-fit: contain;
-}
-
-@media (max-width: 767px) {
-  .VPHomeHero .image {
-    margin: 20px auto 0;
-  }
-
-  .VPHomeHero {
-    padding-top: 40px;
-    padding-bottom: 52px;
-  }
-
-  .VPHomeHero .container {
-    gap: 20px;
-  }
-
-  .VPHomeHero .image-bg {
-    width: 240px;
-    height: 240px;
-  }
-
-  .VPHomeHero .image-src {
-    max-height: 260px;
-  }
+/* Image Deskop Adjustment */
+@media (min-width: 768px){
+  .VPHomeHero .image{margin:60px auto 0}
 }
