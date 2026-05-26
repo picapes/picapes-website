@@ -1,4 +1,4 @@
-name: Deploy Site
+name: Deploy Site (to Cloudflare Pages via Branch)
 
 on:
   workflow_dispatch:
