@@ -231,6 +231,58 @@
   line-height: 1;
 }
 
+.SiteFooter {
+  position: relative;
+  z-index: calc(var(--vp-z-index-sidebar) + 1);
+  flex-shrink: 0;
+  margin-top: auto;
+  padding: 30px 24px 26px;
+  width: 100%;
+  background: var(--vp-c-bg-soft);
+  border-top: 1px solid var(--vp-c-gutter);
+  color: var(--vp-c-text-2);
+  text-align: center;
+}
+
+.SiteFooterLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 22px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  max-width: 690px;
+}
+
+.SiteFooterLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.SiteFooterLink:hover {
+  color: var(--primary-red);
+}
+
+.SiteFooterLink i {
+  color: currentColor;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.SiteFooterCopyright {
+  margin: 14px 0 0;
+  color: var(--vp-c-text-3);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .VPHome {
   padding-top: var(--vp-nav-height);
 }
@@ -310,5 +362,15 @@
   .VPHomeHero .image-src {
     max-height: 260px;
   }
+
+  .SiteFooter {
+    padding: 24px 20px 22px;
+  }
+
+  .SiteFooterLinks {
+    gap: 10px 16px;
+    max-width: 420px;
+  }
 }
+
 

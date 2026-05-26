@@ -44,6 +44,13 @@ export default defineConfig({
         items: [
           { text: 'Getting Started', link: '/getting-started' }
         ]
+      },
+      {
+        text: 'Legal',
+        items: [
+          { text: 'Terms of Service', link: '/legal/terms-of-service' },
+          { text: 'Privacy Policy', link: '/legal/privacy-policy' }
+        ]
       }
     ],
 
