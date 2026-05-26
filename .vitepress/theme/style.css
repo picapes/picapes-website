@@ -43,16 +43,24 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+/* Colors used :) */
+:root {
+  --primary-red: #e94436;
+  --dark-red: #e43334;
+  --vp-nav-height: 68px;
+  --vp-nav-logo-height: 34px;
+}
+
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  --vp-c-brand-1: var(--dark-red);
+  --vp-c-brand-2: var(--primary-red);
+  --vp-c-brand-3: var(--primary-red);
+  --vp-c-brand-soft: rgba(233, 68, 54, 0.14);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -94,14 +102,14 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #bd34fe 30%,
-    #41d1ff
+    var(--primary-red) 30%,
+    var(--dark-red)
   );
 
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #bd34fe 50%,
-    #47caff 50%
+    var(--primary-red) 50%,
+    var(--dark-red) 50%
   );
   --vp-home-hero-image-filter: blur(44px);
 }
@@ -135,5 +143,162 @@
 
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+.VPNav {
+  position: fixed !important;
+  background: var(--vp-c-bg);
+  pointer-events: auto;
+}
+
+.VPNavBar {
+  background: var(--vp-c-bg) !important;
+  box-shadow: 0 8px 24px rgba(38, 24, 23, 0.08);
+}
+
+.dark .VPNavBar {
+  background: var(--vp-c-bg) !important;
+  border-bottom-color: rgba(233, 68, 54, 0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.VPNavBar.home.top,
+.VPNavBar:not(.home),
+.VPNavBar:not(.has-sidebar):not(.home.top) {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.dark .VPNavBar.home.top,
+.dark .VPNavBar:not(.home),
+.dark .VPNavBar:not(.has-sidebar):not(.home.top) {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.VPNavBar .divider-line {
+  background-color: transparent !important;
+}
+
+.VPNavScreen {
+  z-index: calc(var(--vp-z-index-nav) + 1);
+  background-color: var(--vp-c-bg) !important;
+  pointer-events: auto;
+}
+
+.VPNavBar > .wrapper > .container > .title {
+  height: var(--vp-nav-height);
+}
+
+.VPNavBarTitle .title {
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-red);
+}
+
+.VPNavBarTitle {
+  max-width: calc(100vw - 92px);
+}
+
+.VPNavBarTitle .logo {
+  margin-right: 0;
+  object-fit: contain;
+}
+
+.VPNavBarMenuLink {
+  font-weight: 650;
+}
+
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink:hover {
+  color: var(--primary-red);
+}
+
+.VPNavBarSocialLinks .VPSocialLink:hover {
+  color: var(--primary-red);
+}
+
+.VPFeature .icon .fa-solid {
+  color: var(--primary-red);
+}
+
+.VPHome {
+  padding-top: var(--vp-nav-height);
+}
+
+.VPHomeHero {
+  margin-top: 0;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.VPHomeHero .container {
+  align-items: center;
+  gap: 48px;
+}
+
+.VPHomeHero .main {
+  width: min(100%, 620px);
+}
+
+.VPHomeHero .name {
+  max-width: 620px;
+}
+
+.VPHomeHero .tagline {
+  color: var(--vp-c-text-2);
+}
+
+.VPHomeHero .image {
+  margin: 0;
+}
+
+.VPHomeHero .image-container {
+  transform: none;
+}
+
+.VPHomeHero .image-bg {
+  width: 360px;
+  height: 360px;
+  opacity: 0.85;
+}
+
+.VPHomeHero .image-src {
+  max-width: 300px;
+  max-height: 380px;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .VPNavBarTitle .title {
+    max-width: calc(100vw - 108px);
+    overflow: hidden;
+  }
+
+  .VPNavBarTitle .title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .VPHomeHero .image {
+    margin: 20px auto 0;
+  }
+
+  .VPHomeHero {
+    padding-top: 40px;
+    padding-bottom: 52px;
+  }
+
+  .VPHomeHero .container {
+    gap: 20px;
+  }
+
+  .VPHomeHero .image-bg {
+    width: 240px;
+    height: 240px;
+  }
+
+  .VPHomeHero .image-src {
+    max-height: 260px;
+  }
 }
 

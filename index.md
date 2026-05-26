@@ -3,23 +3,33 @@
 layout: home
 
 hero:
-  name: "PiCapes"
-  text: "Docs"
-  tagline: My great project tagline
+  #name: "PiCapes"
+  #text: "Docs"
+  name: "Custom Minecraft Capes Made Easy"
+  tagline: Minecraft Capes like never before!
+  image:
+    src: /assets/player1.webp
+    alt: PiCapes player preview
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Install PiCapes
+      link: /getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      link: https://catalog.picapes.syanic.org/
+      text: View Capes Gallery
+    - theme: alt
+      text: Join Discord
+      link: https://dsc.gg/picapes
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: <i class="fa-solid fa-layer-group"></i>
+    title: Universal Compatibility
+    details: PiCapes works on Fabric, and any Client using Optifine! Works with both Cracked and Premium accounts.
+  - icon: <i class="fa-solid fa-wand-magic-sparkles"></i>
+    title: Premium Features
+    details: Completely free with optional premium features. Enjoy enhanced customization without breaking the bank.
+  - icon: <i class="fa-solid fa-headset"></i>
+    title: Reliable Support
+    details: Get help whenever you need it from our dedicated community and support team.
 ---
 
