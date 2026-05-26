@@ -221,6 +221,16 @@
   color: var(--primary-red);
 }
 
+.VPHomeHero .actions .VPButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.VPHomeHero .actions .VPButton .hero-action-icon {
+  line-height: 1;
+}
+
 .VPHome {
   padding-top: var(--vp-nav-height);
 }
