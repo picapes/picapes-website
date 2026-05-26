@@ -34,5 +34,5 @@ features:
   - icon: <i class="fas fa-headset"></i>
     title: Reliable Support
     details: Get help whenever you need it from our dedicated community and support team.
----
 
+---
