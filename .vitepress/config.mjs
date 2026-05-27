@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
+import { resolve } from 'node:path'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,10 +15,26 @@ export default defineConfig({
       {
         name: 'picapes-assets',
         generateBundle() {
-          const assets = ['picapes-logo.png', 'player1.webp']
+          const assetsDir = fileURLToPath(new URL('../assets', import.meta.url))
+          const assets = []
+
+          const walk = (dir, prefix = '') => {
+            for (const name of readdirSync(dir)) {
+              const fullPath = resolve(dir, name)
+              const relPath = prefix ? `${prefix}/${name}` : name
+
+              if (statSync(fullPath).isDirectory()) {
+                walk(fullPath, relPath)
+              } else {
+                assets.push(relPath)
+              }
+            }
+          }
+
+          walk(assetsDir)
 
           for (const asset of assets) {
-            const assetPath = fileURLToPath(new URL(`../assets/${asset}`, import.meta.url))
+            const assetPath = resolve(assetsDir, asset)
 
             this.emitFile({
               type: 'asset',
