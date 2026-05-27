@@ -35,14 +35,20 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started' }
+      { text: 'Getting Started', link: '/introduction/what-is-picapes' }
     ],
 
     sidebar: [
       {
-        text: 'Information',
+        text: 'Introduction',
         items: [
-          { text: 'Getting Started', link: '/getting-started' }
+          { text: 'What is PiCapes?', link: '/introduction/what-is-picapes' }
+        ]
+      },
+      {
+        text: 'Getting Started',
+        items: [
+          { text: 'Installation Guide', link: '/getting-started/installation' }
         ]
       },
       {

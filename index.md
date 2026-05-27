@@ -8,13 +8,13 @@ hero:
   name: "Custom Minecraft Capes Made Easy"
   tagline: Flex Capes like never before!
   image:
-    src: /assets/player1.webp
+    src: /assets/homepage/player1.webp
     alt: PiCapes player preview
   actions:
     - theme: brand
       icon: <i class="fa-solid fa-download"></i>
       text: Install PiCapes
-      link: /getting-started
+      link: /getting-started/installation
     - theme: alt
       icon: <i class="fas fa-images"></i>
       link: https://catalog.picapes.syanic.org/
