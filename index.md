@@ -14,16 +14,16 @@ hero:
   actions:
     - theme: brand
       icon: <i class="fa-solid fa-download"></i>
-      text: Install PiCapes
+      text: Setup PiCapes
       link: /getting-started/installation
     #- theme: alt
     #  icon: <i class="fas fa-images"></i>
     #  link: https://catalog.picapes.syanic.org/
     #  text: View Capes Gallery
     - theme: alt
-      icon: <i class="fas fa-play"></i>
-      text: Watch Tutorial
-      link: '#watch-video'
+      icon: <i class="fas fa-swatchbook"></i>
+      text: Visit Catalog Dashboard
+      link: 'https://catalog.picapes.syanic.org/'
     - theme: alt
       icon: <i class="fab fa-discord"></i>
       text: Join Discord
