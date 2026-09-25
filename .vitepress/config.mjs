@@ -101,7 +101,7 @@ export default defineConfig({
 
     footer: {
       message: '<a href="https://www.youtube.com/@syanicxd" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> ・ <a href="https://dsc.gg/picapes" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a> ・ <a href="https://github.com/picapes" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> ・ <a href="/legal/terms-of-service">Terms of Service</a> ・ <a href="/legal/privacy-policy">Privacy Policy</a>',
-      copyright: '© PiCapes 2025. All Rights Reserved - Not affiliated with Mojang Studios'
+      copyright: `© PiCapes ${new Date().getFullYear()}. All Rights Reserved - Not affiliated with Mojang Studios`
     }
   }
 })
