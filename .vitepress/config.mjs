@@ -8,7 +8,13 @@ export default defineConfig({
   title: "PiCapes",
   description: "PiCapes is a free way to customize your Minecraft character with Capes!",
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' }]
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/assets/favicons/favicon-96x96.png', sizes: '96x96' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/assets/favicons/favicon.svg' }],
+    ['link', { rel: 'shortcut icon', href: '/assets/favicons/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/assets/favicons/apple-touch-icon.png' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'PiCapes' }],
+    ['link', { rel: 'manifest', href: '/assets/favicons/site.webmanifest' }]
   ],
   vite: {
     plugins: [
