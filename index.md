@@ -1,6 +1,8 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: PiCapes | Free Minecraft Capes for all!
+titleTemplate: false
 
 hero:
   text: '<span class="hero-badge"><i class="fa-solid fa-circle-check"></i> Works for Cracked & Premium!</span>'

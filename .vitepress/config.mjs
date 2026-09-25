@@ -6,7 +6,7 @@ import { resolve } from 'node:path'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "PiCapes",
-  titleTemplate: ':title | Free Minecraft Capes for all!',
+  titleTemplate: ':title | PiCapes',
   description: "PiCapes is a free way to customize your Minecraft character with Capes!",
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' }],
