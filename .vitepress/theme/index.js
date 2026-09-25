@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 import HomeActionIcons from './HomeActionIcons.vue'
 import HomeVideoModal from './HomeVideoModal.vue'
 import PartnerCarousel from './PartnerCarousel.vue'
+import RegisterPrompt from './RegisterPrompt.vue'
 import './style.css'
 
 /** @type {import('vitepress').Theme} */
@@ -19,5 +20,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component('HomeVideoModal', HomeVideoModal)
     app.component('PartnerCarousel', PartnerCarousel)
+    app.component('RegisterPrompt', RegisterPrompt)
   }
 }
