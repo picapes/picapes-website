@@ -25,7 +25,7 @@ description: Learn what PiCapes is and how it works.
 </style>
 
 <img 
-  src="/assets/introduction/preview-01.png" 
+  src="/assets/docs/introduction/preview-01.png" 
   style="border-radius:15px"
 />
 

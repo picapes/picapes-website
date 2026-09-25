@@ -6,7 +6,7 @@ ArcPi Proxy allows PiCapes capes to be displayed in clients that support OptiFin
 ## How it Works?
 When your game requests an OptiFine cape, ArcPi Proxy uses DNS or hosts-file redirection to send the request to PiCapes instead of the OptiFine cape servers.
 
-![ArcPi Proxy](/assets/installation/how_arcpi_proxy_works.png)
+![ArcPi Proxy](/assets/docs/installation/how_arcpi_proxy_works.png)
 
 PiCapes then provides your cape in a format that OptiFine-compatible clients can use, allowing it to appear normally without installing any additional mods.
 

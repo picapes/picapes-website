@@ -13,7 +13,7 @@ This would guide you through the installation process of PiCapes.
   <div class="install-card featured">
     <div class="install-header">
       <div class="install-title">
-        <img src="/assets/installation/fabric.png" alt="Fabric">
+        <img src="/assets/docs/installation/fabric.png" alt="Fabric">
         <div>
           <h3>Fabric Mod</h3>
           <span class="tag">Recommended</span>
@@ -34,7 +34,7 @@ This would guide you through the installation process of PiCapes.
   <div class="install-card">
     <div class="install-header">
       <div class="install-title">
-        <img src="/assets/installation/arcpi.png" alt="ArcPi Proxy">
+        <img src="/assets/docs/installation/arcpi.png" alt="ArcPi Proxy">
         <div>
           <h3>ArcPi Proxy</h3>
           <span class="tag secondary">For Other Minecraft Versions</span>
