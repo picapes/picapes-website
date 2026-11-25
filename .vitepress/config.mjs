@@ -82,7 +82,8 @@ export default defineConfig({
       {
         text: 'Other Guides',
         items: [
-          { text: 'ArcPi Proxy Setup', link: '/other-guides/arcpi-proxy' }
+          { text: 'ArcPi Proxy Setup', link: '/other-guides/arcpi-proxy' },
+          { text: 'PiCapes Events Setup', link: '/other-guides/picapes-event-setup' }
         ]
       },
       {
