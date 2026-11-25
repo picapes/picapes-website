@@ -3,17 +3,17 @@ This guide is to setup a minecraft server to only allow PiCapes registered playe
 
 ## Download plugins
 
-- "Skript" (https://github.com/SkriptLang/Skript/releases)
-- "skJson" (https://github.com/cooffeeRequired/skJson/releases)
-- Server software: "Paper" (https://papermc.io/downloads/paper) / "Purpur" (https://purpurmc.org/downloads)
+- [Skript](https://github.com/SkriptLang/Skript/releases)
+- [skJson](https://github.com/cooffeeRequired/skJson/releases)
+- Server software: [Paper](https://papermc.io/downloads/paper) / [Purpur](https://purpurmc.org/downloads)
 
-Requirements: Java 21+, Skript 2.15+, skJson 6.0+.
+**Requirements:** Java 21+, Skript 2.15+, skJson 6.0+.
 
 ## Instructions
 
 #### 1. Install plugins
 
-Place both plugin ".jar" files in your server's "plugins/" folder. Start and restart the server to generate their configuration files.
+Place both plugin `.jar` files in your server's `plugins/` folder. Start and restart the server to generate their configuration files.
 
 #### 2. Enable HTTP requests
 
