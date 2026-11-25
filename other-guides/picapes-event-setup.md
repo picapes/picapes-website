@@ -50,7 +50,7 @@ sk reload picapes
 ```
 Check the console for errors.
 
-5. Test
+#### 5. Test
 
 - Registered player: should be allowed to join.
-- Unregistered player: should be kicked with "Player is not registered with PiCapes".
+- Unregistered player: should be kicked with `Player is not registered with PiCapes`.
