@@ -18,7 +18,7 @@ Place both plugin `.jar` files in your server's `plugins/` folder. Start and res
 #### 2. Enable HTTP requests
 
 Open `plugins/SkJson/config.yml` and set:
-```
+```yml
 enabled-http: true
 ```
 Restart the server.
@@ -27,7 +27,7 @@ Restart the server.
 
 Create `plugins/Skript/scripts/picapes.sk` and paste:
 
-```
+```yml
 on connect:
     set {_req} to prepare GET request on "https://capeserver.picapes.syanic.org/profile/%player%"
     execute {_req}
@@ -45,7 +45,7 @@ on connect:
 #### 4. Load the script
 
 Run in the server console:
-```
+```sh
 sk reload picapes
 ```
 Check the console for errors.
